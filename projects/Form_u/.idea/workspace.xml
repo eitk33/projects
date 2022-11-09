@@ -2,55 +2,11 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="606ccd4e-3411-48b6-ba56-9f5be972aed1" name="Changes" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/.name" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.name" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/Form_u.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/Form_u.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Sphinx-docs/_build/doctrees/environment.pickle" beforeDir="false" afterPath="$PROJECT_DIR$/Sphinx-docs/_build/doctrees/environment.pickle" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Sphinx-docs/_build/doctrees/formula.doctree" beforeDir="false" afterPath="$PROJECT_DIR$/Sphinx-docs/_build/doctrees/formula.doctree" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Sphinx-docs/_build/doctrees/index.doctree" beforeDir="false" afterPath="$PROJECT_DIR$/Sphinx-docs/_build/doctrees/index.doctree" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Sphinx-docs/_build/doctrees/ing.doctree" beforeDir="false" afterPath="$PROJECT_DIR$/Sphinx-docs/_build/doctrees/ing.doctree" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Sphinx-docs/_build/doctrees/phase.doctree" beforeDir="false" afterPath="$PROJECT_DIR$/Sphinx-docs/_build/doctrees/phase.doctree" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Sphinx-docs/_build/doctrees/project.doctree" beforeDir="false" afterPath="$PROJECT_DIR$/Sphinx-docs/_build/doctrees/project.doctree" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Sphinx-docs/_build/doctrees/test_project.doctree" beforeDir="false" afterPath="$PROJECT_DIR$/Sphinx-docs/_build/doctrees/test_project.doctree" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Sphinx-docs/_build/markdown/formula.md" beforeDir="false" afterPath="$PROJECT_DIR$/Sphinx-docs/_build/markdown/formula.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Sphinx-docs/_build/markdown/index.md" beforeDir="false" afterPath="$PROJECT_DIR$/Sphinx-docs/_build/markdown/index.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Sphinx-docs/_build/markdown/ing.md" beforeDir="false" afterPath="$PROJECT_DIR$/Sphinx-docs/_build/markdown/ing.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Sphinx-docs/_build/markdown/phase.md" beforeDir="false" afterPath="$PROJECT_DIR$/Sphinx-docs/_build/markdown/phase.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Sphinx-docs/_build/markdown/project.md" beforeDir="false" afterPath="$PROJECT_DIR$/Sphinx-docs/_build/markdown/project.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Sphinx-docs/conf.py" beforeDir="false" afterPath="$PROJECT_DIR$/Sphinx-docs/conf.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Sphinx-docs/index.rst" beforeDir="false" afterPath="$PROJECT_DIR$/Sphinx-docs/index.rst" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/_build/doctrees/environment.pickle" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/_build/doctrees/formula.doctree" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/_build/doctrees/index.doctree" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/_build/doctrees/ing.doctree" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/_build/doctrees/phase.doctree" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/_build/doctrees/project.doctree" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/_build/doctrees/test_project.doctree" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/_build/doctrees/upload.doctree" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/formula.db" beforeDir="false" afterPath="$PROJECT_DIR$/formula.db" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ing.py" beforeDir="false" afterPath="$PROJECT_DIR$/ing.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/markdown/formula.md" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/markdown/index.md" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/markdown/ing.md" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/markdown/phase.md" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/markdown/project.md" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/markdown/test_project.md" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/markdown/upload.md" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/project.py" beforeDir="false" afterPath="$PROJECT_DIR$/project.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/project2/blueprints.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/project2/demo.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/project2/demo1.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/project2/demo3.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/project2/formula.db" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/project2/formula.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/project2/ing.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/project2/phase.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/project2/project.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/project2/requirements.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/project2/temp.csv" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/project2/test_project.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/project2/tst.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/project2/upload.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/upload.py" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -71,10 +27,12 @@
   </component>
   <component name="PropertiesComponent">{
   &quot;keyToString&quot;: {
-    &quot;ASKED_ADD_EXTERNAL_FILES&quot;: &quot;true&quot;
+    &quot;ASKED_ADD_EXTERNAL_FILES&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;
   }
 }</component>
-  <component name="RunManager" selected="Python.conf">
+  <component name="RunManager" selected="Python.project">
     <configuration name="conf" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
       <module name="Form_u" />
       <option name="INTERPRETER_OPTIONS" value="" />
@@ -161,10 +119,10 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Python.project" />
         <item itemvalue="Python.conf" />
         <item itemvalue="Python.ing" />
         <item itemvalue="Python.phase" />
-        <item itemvalue="Python.project" />
       </list>
     </recent_temporary>
   </component>
