@@ -1,0 +1,69 @@
+{% extends "layout.html" %}
+
+{% block head %}
+
+function addt() {
+    var sel = document.getElementById("kehila");
+    var strUser = sel.options[sel.selectedIndex].text;
+    if(strUser == "other"){ document.getElementById("yourTextBox").hidden = false;
+    } else {
+        document.getElementById("yourTextBox").hidden = true;
+}}
+
+{% endblock %}
+
+{% block title %} Preferences {% endblock %}
+{% block main %}
+<div style="padding-left: 20px">
+    <h2>Please fill the following:</h2>
+    <p>(Not to worry, you will be able to change it on any time)</p>
+    Pls select your Kehila from the following:
+    <form action="/preference" method="post">
+        <div class="mb-3">
+            <div class="mb-3">
+                <select name="Kehila" id="kehila" onchange="addt()" style=" display: block" required>
+                <option value="">--Please choose an option--</option>
+            {%for k in kehila%}
+            <option value="{{ k.k_name }}">{{ k.k_name }}</option>
+            {%endfor%}
+            <option value="other" >other</option>
+            </select>
+                <div style="padding-bottom: 5px"></div>
+                <div id="yourTextBox" hidden="true">
+                    <input type="text" name="new" placeholder="your kehila name" style="padding-right: 10px"> </div>
+            </div>
+        </div>
+
+        Do you have a role?
+        <div class="form-check" style="padding-top: 10px">
+            <input class="form-check-input" type="checkbox" value="1" id="gabay" name="gabay" onchange="addgabay()">
+            <label class="form-check-label" for="flexCheckDefault">
+          Sure, i'm a Gabay
+        </label>
+        </div>
+        <div class="form-check">
+            <input class="form-check-input" type="checkbox" value="2" id="flexCheckDefault" name="ba">
+            <label class="form-check-label" for="flexCheckDefault">
+            Sure, i'm a ba'al kore
+        </label>
+        </div>
+        <h3 style="padding-top: 20px"> Notifications</h3>
+        Would you like to get notifications?
+        <h4 style="padding-top: 20px"> Pole notifications</h4>
+        <div class="form-check">
+            <input class="form-check-input" type="checkbox" value="3" id="flexCheckDefault" name="mincha">
+            <label class="form-check-label" for="flexCheckDefault">
+            I would like to get poll notifications regarding dovas
+        </label>
+        </div>
+        <div class="form-check">
+            <input class="form-check-input" type="checkbox" value="8" id="flexCheckDefault" name="shabat_c">
+            <label class="form-check-label" for="flexCheckDefault">
+                  I would like to get confirmation notifications
+                </label></div>
+        <button class="btn btn-primary" type="submit" style="display: block; margin-left: auto; margin-right: auto;
+                width: 20%;">submit</button>
+    </form>
+</div>
+
+{% endblock %} 

@@ -1,0 +1,33 @@
+classes:
+NewFormula, ing, phase
+class Ing():
+    init(name, Inci, serial='', temp=40, phil='', type='',remarks='', concen='', inco=''):
+set get:
+    name, Inci, serial='', temp=40, phil='', type='',remarks='', concen='', inco=''
+
+class phase():
+    init:
+        name
+        ings
+        temp
+        grind no
+        stir
+        time
+    set get:
+        name, ings='', temp, grind, stir=yes, time=0
+
+class NewFormula(phase, ing)
+    init(name):
+        name(by date)
+        phase
+        ing
+        pH
+    method:
+        add_ing
+        del_ing
+        change_ing
+        cal_water
+    geset:
+        ing
+        pH
+SELECT * from formula WHERE name = '20220720. . '

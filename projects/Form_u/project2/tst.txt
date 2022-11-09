@@ -1,0 +1,44 @@
+phase = None
+ing = Ing("sls", "sodlasu","2006523", '55',"anti aging_active")
+ing2 = Ing("sci", "sci","2006563", "35","active")
+ing3 = Ing("BG", "BG","2007843", "10","active")
+ing4 = Ing('CA', 'cetyl alcohol', '2013565', '5', 'condition', '5')
+print(type(ing.hlb))
+ing5 = Ing('montanov 68', 'cetyl monta', '2013564', '5', 'emulsifier', '10')
+phase = Phase("P1")
+phase2 = Phase('P2')
+phase.adding(ing, "10")
+phase.adding(ing2, "58")
+phase.adding(ing3, "55")
+phase.adding(ing3, "33")
+phase2.adding(ing4, '7')
+phase2.adding(ing5, '8')
+formula = Formula()
+formula.adding_phase(phase)
+formula.adding_phase(phase2)
+print(phase)
+print(phase2)
+print((ing5))
+print(formula)
+
+
+CREATE TABLE 'phase' (id INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL,
+name text,
+hlb_em INTEGER,
+hlb_ing INTEGER,
+remarks TEXT
+FOREIGN KEY(g_id) REFERENCES people(id) FOREIGN KEY(keh_id) REFERENCES kehilot(id) ););
+
+    upload(tot_ing_list, req_list_ing)
+def upload(x, r):
+sdb = db.execute("SELECT * FROM ingridients")
+for item in sdb:
+    ing = Ing()
+    for k,v in item.items():
+        v = str(v)
+        for char in req_list_ing:
+            if k == char:
+                setattr(ing, str(k) , v)
+            else:
+                pass
+    tot_ing_list.append(ing)

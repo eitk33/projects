@@ -1,0 +1,80 @@
+{% extends "layout.html" %} {% block head %} function addtime_min(){ var s_time_min = document.getElementById("s_time_min") var time_min = document.getElementById("min_s_time") if (s_time_min.hidden === false){ s_time_min.hidden = true; time_min.removeAttribute("required");
+} else { s_time_min.hidden = false; time_min.setAttribute("required", true); } } function addtime_arv(){ var s_time_arv = document.getElementById("s_time_arv") var time_arv = document.getElementById("arv_s_time") if (s_time_arv.hidden === false){ s_time_arv.hidden
+= true; time_arv.removeAttribute("required"); } else { s_time_arv.hidden = false; time_arv.setAttribute("required", true); } } {% endblock %} {% block title %} gabay {% endblock %} {% block main %}
+<div style="padding-left: 20px">
+
+    <form action="/gabay" method="post">
+        <div value="10" name="polls">
+            <div class="form-check">
+                <div class="form-check" style="padding-top: 10px">
+                    <input class="form-check-input" type="checkbox" value="1" id="min" name="minpoll">
+                    <label class="form-check-label" for="flexCheckDefault">
+                    send poll for mincha at:
+                </label>
+                </div>
+            </div>
+            <div id="min">
+                <input type="time" id="min" name="mintime" min="00:00" max="23:59">
+            </div>
+            <div class="form-check">
+                <div class="form-check" style="padding-top: 10px">
+                    <input class="form-check-input" type="checkbox" value="2" id="arv" name="arvpoll">
+                    <label class="form-check-label" for="flexCheckDefault">
+                send poll for arvit at:
+            </label>
+                </div>
+            </div>
+            <div>
+                <input type="time" name="arvtime" min="00:00" max="23:59">
+            </div>
+        </div>
+        <div class="form-check">
+            <div class="form-check" style="padding-top: 10px">
+                <input class="form-check-input" type="checkbox" value="3" id="shabat" name="shabat">
+                <label class="form-check-label" for="flexCheckDefault">
+                send poll for shabat
+                </label>
+            </div>
+        </div>
+</div>
+
+<div class="form-check" value="20" name="conf">
+    <div class="form-check" style="padding-top: 10px">
+        <input class="form-check-input" type="checkbox" value="4" id="mincha_con" name="mincha_con">
+        <label class="form-check-label" for="flexCheckDefault">
+                send conf for mincha
+                </label>
+    </div>
+    <div id="min">
+        <input type="time" id="min" name="mintimecon" min="00:00" max="23:59">
+    </div>
+</div>
+
+<div class="form-check">
+    <div class="form-check" style="padding-top: 10px">
+        <input class="form-check-input" type="checkbox" value="5" id="arv_con" name="arv_con">
+        <label class="form-check-label" for="flexCheckDefault">
+                send conf for arv
+                </label>
+    </div>
+    <div>
+        <input type="time" name="arvtimecon" min="00:00" max="23:59">
+    </div>
+</div>
+
+<div class="form-check">
+    <div class="form-check" style="padding-top: 10px">
+        <input class="form-check-input" type="checkbox" value="5" id="shab_con" name="shab_con">
+        <label class="form-check-label" for="flexCheckDefault">
+                send conf for shabat
+                </label>
+    </div>
+</div>
+<button class="btn btn-primary" type="submit" style="display: block; margin-left: auto; margin-right: auto;
+        width: 20%;">submit</button>
+
+</div>
+</form>
+
+
+{% endblock %}

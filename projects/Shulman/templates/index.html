@@ -1,0 +1,69 @@
+{% extends "layout.html" %} {% block title %} Main {% endblock %} {% block main %}
+
+<div class="container">
+    {% if prefill["keh"] == 1 %}
+    <div class="row align-items-start">
+        <div class="col">
+            <p>
+                <H3>Mincha
+                </H3>
+            </p>
+            <table cellpadding="0">
+                <tr>
+                    {%for man in li_min%}
+                    <td>{{ man.username }} </td>
+                </tr>
+                {%endfor%}
+
+            </table>
+            <form action="/deregister" method="post">
+                <input name="idm" type="hidden" value="idm">
+                <input type="submit" value="Deregister">
+            </form>
+        </div>
+        <div class="col ">
+            <p>
+                <H3>Arvit
+                </H3>
+            </p>
+            <table cellpadding="0 ">
+
+
+                <tr>
+                    {%for man in li_arv%}
+                    <td>{{ man.username }} </td>
+                </tr>
+
+                {%endfor%}
+
+            </table>
+            <form action="/deregister" method="post">
+                <input name="ida" type="hidden" value="ida">
+                <input type="submit" value="Deregister">
+            </form>
+        </div>
+        <div class="col ">
+            <p>
+                <H3>Shabat
+                </H3>
+            </p>
+            <table cellpadding="0 ">
+                <tr>
+                    {%for man in li_shab%}
+                    <td>{{ man.username }} </td>
+                </tr>
+                {%endfor%}
+
+            </table>
+            <form action="/deregister" method="post">
+                <input name="ids" type="hidden" value="ids">
+                <input type="submit" value="Deregister">
+            </form>
+
+        </div>
+    </div>
+    {% else %}
+    <p>{{ message }}</p>
+    {% endif %}
+</div>
+{% endblock %}
