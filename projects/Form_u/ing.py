@@ -47,8 +47,7 @@ class Ing:
         elif comp == 'value':
             if not key:
                 return f"{mydict.values()}"
-            elif re.search(myreg, str(make markdown;
-mydict.values())):
+            elif re.search(myreg, str(mydict.values())):
                 return True
             else:
                 return False

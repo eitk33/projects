@@ -1,7 +1,57 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="606ccd4e-3411-48b6-ba56-9f5be972aed1" name="Changes" comment="" />
+    <list default="true" id="606ccd4e-3411-48b6-ba56-9f5be972aed1" name="Changes" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Sphinx-docs/_build/doctrees/environment.pickle" beforeDir="false" afterPath="$PROJECT_DIR$/Sphinx-docs/_build/doctrees/environment.pickle" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Sphinx-docs/_build/doctrees/formula.doctree" beforeDir="false" afterPath="$PROJECT_DIR$/Sphinx-docs/_build/doctrees/formula.doctree" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Sphinx-docs/_build/doctrees/index.doctree" beforeDir="false" afterPath="$PROJECT_DIR$/Sphinx-docs/_build/doctrees/index.doctree" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Sphinx-docs/_build/doctrees/ing.doctree" beforeDir="false" afterPath="$PROJECT_DIR$/Sphinx-docs/_build/doctrees/ing.doctree" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Sphinx-docs/_build/doctrees/phase.doctree" beforeDir="false" afterPath="$PROJECT_DIR$/Sphinx-docs/_build/doctrees/phase.doctree" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Sphinx-docs/_build/doctrees/project.doctree" beforeDir="false" afterPath="$PROJECT_DIR$/Sphinx-docs/_build/doctrees/project.doctree" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Sphinx-docs/_build/doctrees/test_project.doctree" beforeDir="false" afterPath="$PROJECT_DIR$/Sphinx-docs/_build/doctrees/test_project.doctree" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Sphinx-docs/_build/markdown/formula.md" beforeDir="false" afterPath="$PROJECT_DIR$/Sphinx-docs/_build/markdown/formula.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Sphinx-docs/_build/markdown/index.md" beforeDir="false" afterPath="$PROJECT_DIR$/Sphinx-docs/_build/markdown/index.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Sphinx-docs/_build/markdown/ing.md" beforeDir="false" afterPath="$PROJECT_DIR$/Sphinx-docs/_build/markdown/ing.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Sphinx-docs/_build/markdown/phase.md" beforeDir="false" afterPath="$PROJECT_DIR$/Sphinx-docs/_build/markdown/phase.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Sphinx-docs/_build/markdown/project.md" beforeDir="false" afterPath="$PROJECT_DIR$/Sphinx-docs/_build/markdown/project.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Sphinx-docs/conf.py" beforeDir="false" afterPath="$PROJECT_DIR$/Sphinx-docs/conf.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Sphinx-docs/index.rst" beforeDir="false" afterPath="$PROJECT_DIR$/Sphinx-docs/index.rst" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/_build/doctrees/environment.pickle" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/_build/doctrees/formula.doctree" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/_build/doctrees/index.doctree" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/_build/doctrees/ing.doctree" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/_build/doctrees/phase.doctree" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/_build/doctrees/project.doctree" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/_build/doctrees/test_project.doctree" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/_build/doctrees/upload.doctree" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/formula.db" beforeDir="false" afterPath="$PROJECT_DIR$/formula.db" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ing.py" beforeDir="false" afterPath="$PROJECT_DIR$/ing.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/markdown/formula.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/markdown/index.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/markdown/ing.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/markdown/phase.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/markdown/project.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/markdown/test_project.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/markdown/upload.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/project.py" beforeDir="false" afterPath="$PROJECT_DIR$/project.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/project2/blueprints.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/project2/demo.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/project2/demo1.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/project2/demo3.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/project2/formula.db" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/project2/formula.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/project2/ing.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/project2/phase.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/project2/project.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/project2/requirements.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/project2/temp.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/project2/test_project.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/project2/tst.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/project2/upload.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/upload.py" beforeDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -24,7 +74,28 @@
     &quot;ASKED_ADD_EXTERNAL_FILES&quot;: &quot;true&quot;
   }
 }</component>
-  <component name="RunManager" selected="Python.ing">
+  <component name="RunManager" selected="Python.conf">
+    <configuration name="conf" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
+      <module name="Form_u" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/Sphinx-docs" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/Sphinx-docs/conf.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
     <configuration name="ing" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
       <module name="Form_u" />
       <option name="INTERPRETER_OPTIONS" value="" />
@@ -90,6 +161,7 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Python.conf" />
         <item itemvalue="Python.ing" />
         <item itemvalue="Python.phase" />
         <item itemvalue="Python.project" />

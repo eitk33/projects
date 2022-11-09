@@ -1,3 +1,6 @@
+import os
+import sys
+
 # Configuration file for the Sphinx documentation builder.
 #
 # For the full list of built-in configuration values, see the documentation:
@@ -34,3 +37,19 @@ html_static_path = ['_static']
 # https://www.sphinx-doc.org/en/master/usage/extensions/todo.html#configuration
 
 todo_include_todos = True
+
+
+sys.path.insert(0, os.path.abspath('../'))
+
+
+def skip(app, what, name, obj, would_skip, options):
+    if name in ('__init__',):
+        return False
+    return would_skip
+
+
+def setup(app):
+    app.connect('autodoc-skip-member', skip)
+
+
+extensions.append('sphinx_autodoc_typehints')
