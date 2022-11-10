@@ -5,34 +5,31 @@
 Bases: `object`
 
 
-#### \__init__(name, temp=31, grind=['no', '0 RPM'], stir=['yes', '30 RPM'], time=5)
+
 
 #### adding(s, am)
-this handles the addition of a new Ing object to phase, and what happens if Ing already in phase
-:param s: Ing object
-:param am: has to be an int.
-:return:
+    this handles the addition of a new Ing object to phase, and what happens if Ing already in phase
 
+    :param s: Ing object
 
-#### am_veri(s)
+    :param am: has to be an int.
 
-#### _property_ grind()
+    :return:
+
 
 #### list_mod(s)
-needed for some fixings in the text written
-:param s: self.grind/stir
-:return:
+    needed for some fixings in the text written
 
+    :param s: self.grind/stir
 
-#### _property_ name()
+    :return:
 
-#### _property_ stir()
-
-#### _property_ temp()
-
-#### _property_ time()
 
 #### usedict(s)
-building a dict out of ing object
-:param s: Ing object
-:return: dict
+    building a dict out of ing object
+
+    :param s: Ing object
+
+    :return: dict
+
+[Index](../index.md)

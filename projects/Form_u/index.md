@@ -34,7 +34,7 @@ contain the root `toctree` directive. -->
     * [`ing()`](./e/project.md#project.ing)
 
 
-    * [`main()`](./e/project.md#project.main)
+
 
 
     * [`new()`](./e/project.md#project.new)
@@ -52,8 +52,4 @@ contain the root `toctree` directive. -->
     * [`upload()`](./e/project.md#project.upload)
 
 
-# Indices and tables
 
-[Index](genindex.md)
-[Module Index](py-modindex.md)
-[Search Page](search.md)

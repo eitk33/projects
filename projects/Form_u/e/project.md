@@ -2,18 +2,18 @@
 
 
 ### project.formup(x)
-handling the process of create new formula in the database
-:param x: Formula object
-:return: None
+    handling the process of create new formula in the database
+    :param x: Formula object
+    :return: None
 
 
 ### project.ing(req_list_ing)
-managing the process of getting new ingredient to the system
-:param req_list_ing: list of characteristics required for the new ingredient
-:return: none
+    managing the process of getting new ingredient to the system
+    :param req_list_ing: list of characteristics required for the new ingredient
+    :return: none
 
 
-### project.main()
+
 
 ### project.new(y, z)
 
@@ -43,14 +43,19 @@ managing the process of getting new ingredient to the system
 
 ### project.new_phase(x)
 creating the additional  requirements for the new created phase
+
 :param x: is Phase class
+
 :return: completed new phase object with its additional requirements
 
 
 ### project.update(x, y)
 insert created ingredient to database
+
 :param x: new ingredient (Ing object)
+
 :param y: list of characteristics to update in the database
+
 :return: None
 
 
@@ -69,3 +74,5 @@ insert created ingredient to database
 * **Returns**
 
     updated list of ingredients for the current phase
+
+[Index](../index.md)
