@@ -6,7 +6,7 @@ from cs50 import SQL
 import sys
 
 # setting database for the app
-db = SQL("sqlite:///formula.db")
+#db = SQL("sqlite:///formula.db")
 
 # declaring some global lists
 req_list_ing = ['name', 'inci', 'serial', 'temp', 'typeo', 'hlb', 'remarks', 'concen', 'phil', 'incapabilities',
@@ -191,7 +191,7 @@ def upload(x, r):
     :return: updated list of ingredients for the current phase
 
     """
-    sdb = db.execute("SELECT * FROM ingridients")
+  #  sdb = db.execute("SELECT * FROM ingridients")
     for item in sdb:
         ing = Ing()
         for k, v in item.items():

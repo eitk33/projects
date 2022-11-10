@@ -2,10 +2,29 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="606ccd4e-3411-48b6-ba56-9f5be972aed1" name="Changes" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/.name" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.name" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/Form_u.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/Form_u.iml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Sphinx-docs/Makefile" beforeDir="false" afterPath="$PROJECT_DIR$/Sphinx-docs/Makefile" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Sphinx-docs/_build/doctrees/environment.pickle" beforeDir="false" afterPath="$PROJECT_DIR$/Sphinx-docs/_build/doctrees/environment.pickle" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Sphinx-docs/_build/doctrees/formula.doctree" beforeDir="false" afterPath="$PROJECT_DIR$/Sphinx-docs/_build/doctrees/formula.doctree" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Sphinx-docs/_build/doctrees/index.doctree" beforeDir="false" afterPath="$PROJECT_DIR$/Sphinx-docs/_build/doctrees/index.doctree" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Sphinx-docs/_build/doctrees/ing.doctree" beforeDir="false" afterPath="$PROJECT_DIR$/Sphinx-docs/_build/doctrees/ing.doctree" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Sphinx-docs/_build/doctrees/phase.doctree" beforeDir="false" afterPath="$PROJECT_DIR$/Sphinx-docs/_build/doctrees/phase.doctree" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Sphinx-docs/_build/doctrees/project.doctree" beforeDir="false" afterPath="$PROJECT_DIR$/Sphinx-docs/_build/doctrees/project.doctree" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Sphinx-docs/_build/doctrees/test_project.doctree" beforeDir="false" afterPath="$PROJECT_DIR$/Sphinx-docs/_build/doctrees/test_project.doctree" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Sphinx-docs/_build/doctrees/upload.doctree" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Sphinx-docs/_build/markdown/formula.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Sphinx-docs/_build/markdown/index.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Sphinx-docs/_build/markdown/ing.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Sphinx-docs/_build/markdown/phase.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Sphinx-docs/_build/markdown/project.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Sphinx-docs/_build/markdown/test_project.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Sphinx-docs/_build/markdown/upload.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Sphinx-docs/conf.py" beforeDir="false" afterPath="$PROJECT_DIR$/Sphinx-docs/conf.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Sphinx-docs/index.rst" beforeDir="false" afterPath="$PROJECT_DIR$/Sphinx-docs/index.rst" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Sphinx-docs/mkdsupport.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Sphinx-docs/upload.rst" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/project.py" beforeDir="false" afterPath="$PROJECT_DIR$/project.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -25,13 +44,14 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent">{
-  &quot;keyToString&quot;: {
-    &quot;ASKED_ADD_EXTERNAL_FILES&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "ASKED_ADD_EXTERNAL_FILES": "true",
+    "RunOnceActivity.OpenProjectViewOnStart": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "settings.editor.selected.configurable": "configurable.group.tools"
   }
-}</component>
+}]]></component>
   <component name="RunManager" selected="Python.project">
     <configuration name="conf" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
       <module name="Form_u" />
@@ -136,5 +156,16 @@
       <updated>1667917657465</updated>
     </task>
     <servers />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
   </component>
 </project>

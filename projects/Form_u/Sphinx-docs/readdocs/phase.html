@@ -1,0 +1,169 @@
+
+<!DOCTYPE html>
+
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="generator" content="Docutils 0.19: https://docutils.sourceforge.io/" />
+
+    <title>phase module &#8212; Form_u  documentation</title>
+    <link rel="stylesheet" type="text/css" href="../_static/pygments.css" />
+    <link rel="stylesheet" type="text/css" href="../_static/alabaster.css" />
+    <script data-url_root="../" id="documentation_options" src="../_static/documentation_options.js"></script>
+    <script src="../_static/jquery.js"></script>
+    <script src="../_static/underscore.js"></script>
+    <script src="../_static/_sphinx_javascript_frameworks_compat.js"></script>
+    <script src="../_static/doctools.js"></script>
+    <script src="../_static/sphinx_highlight.js"></script>
+    <link rel="index" title="Index" href="../genindex.html" />
+    <link rel="search" title="Search" href="../search.html" />
+   
+  <link rel="stylesheet" href="../_static/custom.css" type="text/css" />
+  
+  
+  <meta name="viewport" content="width=device-width, initial-scale=0.9, maximum-scale=0.9" />
+
+  </head><body>
+  
+
+    <div class="document">
+      <div class="documentwrapper">
+        <div class="bodywrapper">
+          
+
+          <div class="body" role="main">
+            
+  <section id="module-phase">
+<span id="phase-module"></span><h1>phase module<a class="headerlink" href="#module-phase" title="Permalink to this heading">¶</a></h1>
+<dl class="py class">
+<dt class="sig sig-object py" id="phase.Phase">
+<em class="property"><span class="pre">class</span><span class="w"> </span></em><span class="sig-prename descclassname"><span class="pre">phase.</span></span><span class="sig-name descname"><span class="pre">Phase</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">name</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">temp</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">31</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">grind</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">['no',</span> <span class="pre">'0</span> <span class="pre">RPM']</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">stir</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">['yes',</span> <span class="pre">'30</span> <span class="pre">RPM']</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">time</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">5</span></span></em><span class="sig-paren">)</span><a class="reference internal" href="../_modules/phase.html#Phase"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#phase.Phase" title="Permalink to this definition">¶</a></dt>
+<dd><p>Bases: <code class="xref py py-class docutils literal notranslate"><span class="pre">object</span></code></p>
+<dl class="py method">
+<dt class="sig sig-object py" id="phase.Phase.__init__">
+<span class="sig-name descname"><span class="pre">__init__</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">name</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">temp</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">31</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">grind</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">['no',</span> <span class="pre">'0</span> <span class="pre">RPM']</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">stir</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">['yes',</span> <span class="pre">'30</span> <span class="pre">RPM']</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">time</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">5</span></span></em><span class="sig-paren">)</span><a class="reference internal" href="../_modules/phase.html#Phase.__init__"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#phase.Phase.__init__" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="phase.Phase.adding">
+<span class="sig-name descname"><span class="pre">adding</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">s</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">am</span></span></em><span class="sig-paren">)</span><a class="reference internal" href="../_modules/phase.html#Phase.adding"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#phase.Phase.adding" title="Permalink to this definition">¶</a></dt>
+<dd><p>this handles the addition of a new Ing object to phase, and what happens if Ing already in phase
+:param s: Ing object
+:param am: has to be an int.
+:return:</p>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="phase.Phase.am_veri">
+<span class="sig-name descname"><span class="pre">am_veri</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">s</span></span></em><span class="sig-paren">)</span><a class="reference internal" href="../_modules/phase.html#Phase.am_veri"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#phase.Phase.am_veri" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py property">
+<dt class="sig sig-object py" id="phase.Phase.grind">
+<em class="property"><span class="pre">property</span><span class="w"> </span></em><span class="sig-name descname"><span class="pre">grind</span></span><a class="headerlink" href="#phase.Phase.grind" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="phase.Phase.list_mod">
+<span class="sig-name descname"><span class="pre">list_mod</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">s</span></span></em><span class="sig-paren">)</span><a class="reference internal" href="../_modules/phase.html#Phase.list_mod"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#phase.Phase.list_mod" title="Permalink to this definition">¶</a></dt>
+<dd><p>needed for some fixings in the text written
+:param s: self.grind/stir
+:return:</p>
+</dd></dl>
+
+<dl class="py property">
+<dt class="sig sig-object py" id="phase.Phase.name">
+<em class="property"><span class="pre">property</span><span class="w"> </span></em><span class="sig-name descname"><span class="pre">name</span></span><a class="headerlink" href="#phase.Phase.name" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py property">
+<dt class="sig sig-object py" id="phase.Phase.stir">
+<em class="property"><span class="pre">property</span><span class="w"> </span></em><span class="sig-name descname"><span class="pre">stir</span></span><a class="headerlink" href="#phase.Phase.stir" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py property">
+<dt class="sig sig-object py" id="phase.Phase.temp">
+<em class="property"><span class="pre">property</span><span class="w"> </span></em><span class="sig-name descname"><span class="pre">temp</span></span><a class="headerlink" href="#phase.Phase.temp" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py property">
+<dt class="sig sig-object py" id="phase.Phase.time">
+<em class="property"><span class="pre">property</span><span class="w"> </span></em><span class="sig-name descname"><span class="pre">time</span></span><a class="headerlink" href="#phase.Phase.time" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="phase.Phase.usedict">
+<span class="sig-name descname"><span class="pre">usedict</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">s</span></span></em><span class="sig-paren">)</span><a class="reference internal" href="../_modules/phase.html#Phase.usedict"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#phase.Phase.usedict" title="Permalink to this definition">¶</a></dt>
+<dd><p>building a dict out of ing object
+:param s: Ing object
+:return: dict</p>
+</dd></dl>
+
+</dd></dl>
+
+</section>
+
+
+          </div>
+          
+        </div>
+      </div>
+      <div class="sphinxsidebar" role="navigation" aria-label="main navigation">
+        <div class="sphinxsidebarwrapper">
+<h1 class="logo"><a href="../index.html">Form_u</a></h1>
+
+
+
+
+
+
+
+
+<h3>Navigation</h3>
+
+<div class="relations">
+<h3>Related Topics</h3>
+<ul>
+  <li><a href="../index.html">Documentation overview</a><ul>
+  </ul></li>
+</ul>
+</div>
+<div id="searchbox" style="display: none" role="search">
+  <h3 id="searchlabel">Quick search</h3>
+    <div class="searchformwrapper">
+    <form class="search" action="../search.html" method="get">
+      <input type="text" name="q" aria-labelledby="searchlabel" autocomplete="off" autocorrect="off" autocapitalize="off" spellcheck="false"/>
+      <input type="submit" value="Go" />
+    </form>
+    </div>
+</div>
+<script>document.getElementById('searchbox').style.display = "block"</script>
+
+
+
+
+
+
+
+
+        </div>
+      </div>
+      <div class="clearer"></div>
+    </div>
+    <div class="footer">
+      &copy;2022, Eitan Katz.
+      
+      |
+      Powered by <a href="http://sphinx-doc.org/">Sphinx 5.3.0</a>
+      &amp; <a href="https://github.com/bitprophet/alabaster">Alabaster 0.7.12</a>
+      
+      |
+      <a href="../_sources/Sphinx-docs/phase.rst.txt"
+          rel="nofollow">Page source</a>
+    </div>
+
+    
+
+    
+  </body>
+</html>

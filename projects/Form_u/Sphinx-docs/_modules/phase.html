@@ -1,0 +1,250 @@
+
+<!DOCTYPE html>
+
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>phase &#8212; Form_u  documentation</title>
+    <link rel="stylesheet" type="text/css" href="../_static/pygments.css" />
+    <link rel="stylesheet" type="text/css" href="../_static/alabaster.css" />
+    <script data-url_root="../" id="documentation_options" src="../_static/documentation_options.js"></script>
+    <script src="../_static/jquery.js"></script>
+    <script src="../_static/underscore.js"></script>
+    <script src="../_static/_sphinx_javascript_frameworks_compat.js"></script>
+    <script src="../_static/doctools.js"></script>
+    <script src="../_static/sphinx_highlight.js"></script>
+    <link rel="index" title="Index" href="../genindex.html" />
+    <link rel="search" title="Search" href="../search.html" />
+   
+  <link rel="stylesheet" href="../_static/custom.css" type="text/css" />
+  
+  
+  <meta name="viewport" content="width=device-width, initial-scale=0.9, maximum-scale=0.9" />
+
+  </head><body>
+  
+
+    <div class="document">
+      <div class="documentwrapper">
+        <div class="bodywrapper">
+          
+
+          <div class="body" role="main">
+            
+  <h1>Source code for phase</h1><div class="highlight"><pre>
+<span></span><span class="kn">import</span> <span class="nn">re</span>
+<span class="kn">from</span> <span class="nn">ing</span> <span class="kn">import</span> <span class="n">Ing</span>
+
+
+<div class="viewcode-block" id="Phase"><a class="viewcode-back" href="../Sphinx-docs/phase.html#phase.Phase">[docs]</a><span class="k">class</span> <span class="nc">Phase</span><span class="p">():</span>
+<div class="viewcode-block" id="Phase.__init__"><a class="viewcode-back" href="../Sphinx-docs/phase.html#phase.Phase.__init__">[docs]</a>    <span class="k">def</span> <span class="fm">__init__</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">name</span><span class="p">,</span> <span class="n">temp</span><span class="o">=</span><span class="mi">31</span><span class="p">,</span> <span class="n">grind</span><span class="o">=</span><span class="p">[</span><span class="s1">&#39;no&#39;</span><span class="p">,</span> <span class="s1">&#39;0 RPM&#39;</span><span class="p">],</span> <span class="n">stir</span><span class="o">=</span><span class="p">[</span><span class="s1">&#39;yes&#39;</span><span class="p">,</span> <span class="s1">&#39;30 RPM&#39;</span><span class="p">],</span> <span class="n">time</span><span class="o">=</span><span class="mi">5</span><span class="p">):</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">name</span> <span class="o">=</span> <span class="n">name</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">ingr</span> <span class="o">=</span> <span class="p">{}</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">temp</span> <span class="o">=</span> <span class="n">temp</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">grind</span> <span class="o">=</span> <span class="n">grind</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">stir</span> <span class="o">=</span> <span class="n">stir</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">time</span> <span class="o">=</span> <span class="n">time</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">counter</span> <span class="o">=</span> <span class="nb">len</span><span class="p">(</span><span class="bp">self</span><span class="o">.</span><span class="n">ingr</span><span class="o">.</span><span class="n">keys</span><span class="p">())</span></div>
+
+    <span class="k">def</span> <span class="fm">__str__</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
+        <span class="sd">&quot;&quot;&quot;</span>
+
+<span class="sd">        :return: dict of the Phase&#39;s ingredients and the properties of the phase</span>
+<span class="sd">        &quot;&quot;&quot;</span>
+        <span class="n">newdict</span> <span class="o">=</span> <span class="p">{}</span>
+        <span class="n">newdict</span><span class="p">[</span><span class="s1">&#39;grind&#39;</span><span class="p">]</span> <span class="o">=</span> <span class="bp">self</span><span class="o">.</span><span class="n">list_mod</span><span class="p">(</span><span class="bp">self</span><span class="o">.</span><span class="n">grind</span><span class="p">)</span>
+        <span class="n">newdict</span><span class="p">[</span><span class="s1">&#39;stir&#39;</span><span class="p">]</span> <span class="o">=</span> <span class="bp">self</span><span class="o">.</span><span class="n">list_mod</span><span class="p">(</span><span class="bp">self</span><span class="o">.</span><span class="n">stir</span><span class="p">)</span>
+        <span class="n">newdict</span><span class="p">[</span><span class="s1">&#39;name&#39;</span><span class="p">]</span> <span class="o">=</span> <span class="bp">self</span><span class="o">.</span><span class="n">name</span>
+        <span class="n">newdict</span><span class="p">[</span><span class="s1">&#39;time&#39;</span><span class="p">]</span> <span class="o">=</span> <span class="bp">self</span><span class="o">.</span><span class="n">time</span>
+        <span class="n">newdict</span><span class="p">[</span><span class="s1">&#39;temp&#39;</span><span class="p">]</span> <span class="o">=</span> <span class="bp">self</span><span class="o">.</span><span class="n">temp</span>
+        <span class="k">return</span> <span class="p">(</span><span class="sa">f</span><span class="s2">&quot;</span><span class="si">{</span><span class="nb">str</span><span class="p">(</span><span class="n">newdict</span><span class="p">)</span><span class="si">}</span><span class="s2"> </span><span class="si">{</span><span class="nb">str</span><span class="p">(</span><span class="bp">self</span><span class="o">.</span><span class="n">ingr</span><span class="p">)</span><span class="si">}</span><span class="s2">&quot;</span><span class="p">)</span>
+
+<div class="viewcode-block" id="Phase.list_mod"><a class="viewcode-back" href="../Sphinx-docs/phase.html#phase.Phase.list_mod">[docs]</a>    <span class="k">def</span> <span class="nf">list_mod</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">s</span><span class="p">):</span>
+        <span class="sd">&quot;&quot;&quot;</span>
+<span class="sd">        needed for some fixings in the text written</span>
+<span class="sd">        :param s: self.grind/stir</span>
+<span class="sd">        :return:</span>
+<span class="sd">        &quot;&quot;&quot;</span>
+        <span class="k">if</span> <span class="n">s</span><span class="p">[</span><span class="mi">0</span><span class="p">]</span> <span class="o">==</span> <span class="s1">&#39;yes&#39;</span><span class="p">:</span>
+            <span class="k">return</span> <span class="n">s</span><span class="p">[</span><span class="mi">0</span><span class="p">]</span> <span class="o">+</span> <span class="s2">&quot; &quot;</span> <span class="o">+</span> <span class="n">s</span><span class="p">[</span><span class="mi">1</span><span class="p">]</span>
+        <span class="k">return</span> <span class="n">s</span><span class="p">[</span><span class="mi">0</span><span class="p">]</span></div>
+
+<div class="viewcode-block" id="Phase.adding"><a class="viewcode-back" href="../Sphinx-docs/phase.html#phase.Phase.adding">[docs]</a>    <span class="k">def</span> <span class="nf">adding</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">s</span><span class="p">,</span> <span class="n">am</span><span class="p">):</span>
+        <span class="sd">&quot;&quot;&quot;</span>
+<span class="sd">        this handles the addition of a new Ing object to phase, and what happens if Ing already in phase</span>
+<span class="sd">        :param s: Ing object</span>
+<span class="sd">        :param am: has to be an int.</span>
+<span class="sd">        :return:</span>
+<span class="sd">        &quot;&quot;&quot;</span>
+
+        <span class="bp">self</span><span class="o">.</span><span class="n">am_veri</span><span class="p">(</span><span class="n">am</span><span class="p">)</span>
+        <span class="k">if</span> <span class="nb">isinstance</span><span class="p">(</span><span class="n">s</span><span class="p">,</span> <span class="n">Ing</span><span class="p">):</span>
+
+            <span class="c1"># constructing a dict out of the ing object</span>
+            <span class="n">r</span> <span class="o">=</span> <span class="bp">self</span><span class="o">.</span><span class="n">usedict</span><span class="p">(</span><span class="n">s</span><span class="p">)</span>
+            <span class="n">temp_dict</span> <span class="o">=</span> <span class="p">{</span><span class="s1">&#39;weight&#39;</span><span class="p">:</span> <span class="n">am</span><span class="p">}</span>
+            <span class="n">x</span> <span class="o">=</span> <span class="n">temp_dict</span><span class="o">.</span><span class="n">copy</span>
+
+            <span class="c1"># check ig ingredient is already in the phase</span>
+            <span class="k">for</span> <span class="n">item</span> <span class="ow">in</span> <span class="bp">self</span><span class="o">.</span><span class="n">ingr</span><span class="o">.</span><span class="n">values</span><span class="p">():</span>
+                <span class="k">if</span> <span class="n">item</span><span class="p">:</span>
+                    <span class="k">if</span> <span class="p">(</span><span class="n">s</span><span class="o">.</span><span class="n">search</span><span class="p">(</span><span class="s1">&#39;key&#39;</span><span class="p">,</span> <span class="s1">&#39;serial&#39;</span><span class="p">))</span> <span class="o">==</span> <span class="n">item</span><span class="p">[</span><span class="s1">&#39;serial&#39;</span><span class="p">]:</span>
+                        <span class="n">item</span><span class="p">[</span><span class="s1">&#39;weight&#39;</span><span class="p">]</span> <span class="o">=</span> <span class="n">am</span>
+                        <span class="k">return</span>
+                    <span class="k">else</span><span class="p">:</span>
+                        <span class="k">pass</span>
+            <span class="n">r</span><span class="o">.</span><span class="n">update</span><span class="p">(</span><span class="n">temp_dict</span><span class="p">)</span>
+            <span class="n">x</span> <span class="o">=</span> <span class="n">r</span><span class="o">.</span><span class="n">copy</span><span class="p">()</span>
+            <span class="k">for</span> <span class="n">item</span> <span class="ow">in</span> <span class="n">r</span><span class="o">.</span><span class="n">keys</span><span class="p">():</span>
+                <span class="k">if</span> <span class="ow">not</span> <span class="n">r</span><span class="p">[</span><span class="n">item</span><span class="p">]:</span>
+                    <span class="k">del</span> <span class="n">x</span><span class="p">[</span><span class="n">item</span><span class="p">]</span>
+            <span class="bp">self</span><span class="o">.</span><span class="n">counter</span> <span class="o">+=</span> <span class="mi">1</span>
+
+            <span class="c1"># numbering how many ingredients in the phase</span>
+            <span class="bp">self</span><span class="o">.</span><span class="n">ingr</span><span class="p">[</span><span class="bp">self</span><span class="o">.</span><span class="n">counter</span><span class="p">]</span> <span class="o">=</span> <span class="n">x</span></div>
+
+<div class="viewcode-block" id="Phase.am_veri"><a class="viewcode-back" href="../Sphinx-docs/phase.html#phase.Phase.am_veri">[docs]</a>    <span class="k">def</span> <span class="nf">am_veri</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">s</span><span class="p">):</span>
+        <span class="k">try</span><span class="p">:</span>
+            <span class="n">s</span> <span class="o">=</span> <span class="nb">int</span><span class="p">(</span><span class="n">s</span><span class="p">)</span>
+        <span class="k">except</span> <span class="ne">ValueError</span><span class="p">:</span>
+            <span class="k">raise</span> <span class="ne">ValueError</span><span class="p">(</span><span class="s2">&quot;amount must be an int&quot;</span><span class="p">)</span></div>
+    <span class="c1"># all sorts of getters and setters</span>
+    <span class="nd">@property</span>
+    <span class="k">def</span> <span class="nf">name</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
+        <span class="k">return</span> <span class="bp">self</span><span class="o">.</span><span class="n">_name</span>
+
+    <span class="nd">@name</span><span class="o">.</span><span class="n">setter</span>
+    <span class="k">def</span> <span class="nf">name</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">name</span><span class="p">):</span>
+        <span class="k">if</span> <span class="ow">not</span> <span class="n">re</span><span class="o">.</span><span class="n">search</span><span class="p">(</span><span class="sa">r</span><span class="s2">&quot;^(P\d\d?)$&quot;</span><span class="p">,</span> <span class="n">name</span><span class="p">):</span>
+            <span class="k">raise</span> <span class="ne">ValueError</span><span class="p">(</span><span class="s2">&quot;only P(Number) is valid&quot;</span><span class="p">)</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">_name</span> <span class="o">=</span> <span class="n">name</span>
+
+    <span class="nd">@property</span>
+    <span class="k">def</span> <span class="nf">temp</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
+        <span class="k">return</span> <span class="bp">self</span><span class="o">.</span><span class="n">_temp</span>
+
+    <span class="nd">@temp</span><span class="o">.</span><span class="n">setter</span>
+    <span class="k">def</span> <span class="nf">temp</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">temp</span><span class="p">):</span>
+        <span class="k">try</span><span class="p">:</span>
+            <span class="n">temp</span> <span class="o">=</span> <span class="nb">int</span><span class="p">(</span><span class="n">temp</span><span class="p">)</span>
+        <span class="k">except</span> <span class="ne">ValueError</span><span class="p">:</span>
+            <span class="k">return</span> <span class="p">(</span><span class="s2">&quot;temp must be an int&quot;</span><span class="p">)</span>
+        <span class="k">if</span> <span class="ow">not</span> <span class="mi">30</span> <span class="o">&lt;</span> <span class="n">temp</span> <span class="o">&lt;</span> <span class="mi">90</span><span class="p">:</span>
+            <span class="k">raise</span> <span class="ne">ValueError</span><span class="p">(</span><span class="s2">&quot;temp must be 30 &lt;temp &lt;90&quot;</span><span class="p">)</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">_temp</span> <span class="o">=</span> <span class="n">temp</span>
+
+    <span class="nd">@property</span>
+    <span class="k">def</span> <span class="nf">grind</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
+        <span class="k">return</span> <span class="bp">self</span><span class="o">.</span><span class="n">_grind</span>
+
+    <span class="nd">@grind</span><span class="o">.</span><span class="n">setter</span>
+    <span class="k">def</span> <span class="nf">grind</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">grind</span><span class="p">):</span>
+        <span class="k">if</span> <span class="ow">not</span> <span class="n">grind</span><span class="p">[</span><span class="mi">0</span><span class="p">]</span> <span class="o">==</span> <span class="s1">&#39;yes&#39;</span> <span class="ow">and</span> <span class="ow">not</span> <span class="n">grind</span><span class="p">[</span><span class="mi">0</span><span class="p">]</span> <span class="o">==</span> <span class="s1">&#39;no&#39;</span><span class="p">:</span>
+            <span class="k">raise</span> <span class="ne">ValueError</span><span class="p">(</span><span class="s2">&quot;first arg of grind must be yes or no&quot;</span><span class="p">)</span>
+        <span class="k">if</span> <span class="ow">not</span> <span class="n">re</span><span class="o">.</span><span class="n">search</span><span class="p">(</span><span class="sa">r</span><span class="s2">&quot;[0-9][0-9]?[0-9]?[0-9]?\sRPM&quot;</span><span class="p">,</span> <span class="n">grind</span><span class="p">[</span><span class="mi">1</span><span class="p">]):</span>
+            <span class="k">raise</span> <span class="ne">ValueError</span><span class="p">(</span><span class="s2">&quot;grind format: (number) RPM&quot;</span><span class="p">)</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">_grind</span> <span class="o">=</span> <span class="n">grind</span>
+
+    <span class="nd">@property</span>
+    <span class="k">def</span> <span class="nf">stir</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
+        <span class="k">return</span> <span class="bp">self</span><span class="o">.</span><span class="n">_stir</span>
+
+    <span class="nd">@stir</span><span class="o">.</span><span class="n">setter</span>
+    <span class="k">def</span> <span class="nf">stir</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">stir</span><span class="p">):</span>
+        <span class="k">if</span> <span class="ow">not</span> <span class="n">stir</span><span class="p">[</span><span class="mi">0</span><span class="p">]</span> <span class="o">==</span> <span class="s1">&#39;yes&#39;</span> <span class="ow">and</span> <span class="ow">not</span> <span class="n">stir</span><span class="p">[</span><span class="mi">0</span><span class="p">]</span> <span class="o">==</span> <span class="s1">&#39;no&#39;</span><span class="p">:</span>
+            <span class="k">raise</span> <span class="ne">ValueError</span><span class="p">(</span><span class="s2">&quot;first arg of stir must be yes or no&quot;</span><span class="p">)</span>
+        <span class="k">if</span> <span class="ow">not</span> <span class="n">re</span><span class="o">.</span><span class="n">search</span><span class="p">(</span><span class="sa">r</span><span class="s2">&quot;[0-9][0-9]?[0-9]?[0-9]?\sRPM&quot;</span><span class="p">,</span> <span class="n">stir</span><span class="p">[</span><span class="mi">1</span><span class="p">]):</span>
+            <span class="k">raise</span> <span class="ne">ValueError</span><span class="p">(</span><span class="s2">&quot;stir format: (number) RPM&quot;</span><span class="p">)</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">_stir</span> <span class="o">=</span> <span class="n">stir</span>
+
+    <span class="nd">@property</span>
+    <span class="k">def</span> <span class="nf">time</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
+        <span class="k">return</span> <span class="bp">self</span><span class="o">.</span><span class="n">_time</span>
+
+    <span class="nd">@time</span><span class="o">.</span><span class="n">setter</span>
+    <span class="k">def</span> <span class="nf">time</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">time</span><span class="p">):</span>
+        <span class="k">if</span> <span class="ow">not</span> <span class="n">re</span><span class="o">.</span><span class="n">search</span><span class="p">(</span><span class="sa">r</span><span class="s2">&quot;\d\d?\d?&quot;</span><span class="p">,</span> <span class="nb">str</span><span class="p">(</span><span class="n">time</span><span class="p">)):</span>
+            <span class="k">raise</span> <span class="ne">ValueError</span><span class="p">(</span><span class="s2">&quot;time must be 1-digit min to 3-digit max&quot;</span><span class="p">)</span>
+        <span class="k">try</span><span class="p">:</span>
+            <span class="n">time</span> <span class="o">=</span> <span class="nb">int</span><span class="p">(</span><span class="n">time</span><span class="p">)</span>
+        <span class="k">except</span> <span class="ne">ValueError</span><span class="p">:</span>
+            <span class="k">return</span> <span class="p">(</span><span class="s2">&quot;time must be an int&quot;</span><span class="p">)</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">_time</span> <span class="o">=</span> <span class="n">time</span>
+
+<div class="viewcode-block" id="Phase.usedict"><a class="viewcode-back" href="../Sphinx-docs/phase.html#phase.Phase.usedict">[docs]</a>    <span class="k">def</span> <span class="nf">usedict</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">s</span><span class="p">):</span>
+        <span class="sd">&quot;&quot;&quot;</span>
+<span class="sd">        building a dict out of ing object</span>
+<span class="sd">        :param s: Ing object</span>
+<span class="sd">        :return: dict</span>
+<span class="sd">        &quot;&quot;&quot;</span>
+        <span class="n">mydict</span> <span class="o">=</span> <span class="p">{}</span>
+        <span class="k">for</span> <span class="n">_</span><span class="p">,</span> <span class="n">var</span> <span class="ow">in</span> <span class="nb">vars</span><span class="p">(</span><span class="n">s</span><span class="p">)</span><span class="o">.</span><span class="n">items</span><span class="p">():</span>
+            <span class="n">_</span> <span class="o">=</span> <span class="n">_</span><span class="o">.</span><span class="n">strip</span><span class="p">(</span><span class="s2">&quot;_&quot;</span><span class="p">)</span>
+            <span class="n">temp_dict</span> <span class="o">=</span> <span class="p">{</span><span class="n">_</span><span class="p">:</span> <span class="n">var</span><span class="p">}</span>
+            <span class="n">mydict</span><span class="o">.</span><span class="n">update</span><span class="p">(</span><span class="n">temp_dict</span><span class="p">)</span>
+        <span class="k">return</span> <span class="n">mydict</span></div></div>
+</pre></div>
+
+          </div>
+          
+        </div>
+      </div>
+      <div class="sphinxsidebar" role="navigation" aria-label="main navigation">
+        <div class="sphinxsidebarwrapper">
+<h1 class="logo"><a href="../index.html">Form_u</a></h1>
+
+
+
+
+
+
+
+
+<h3>Navigation</h3>
+
+<div class="relations">
+<h3>Related Topics</h3>
+<ul>
+  <li><a href="../index.html">Documentation overview</a><ul>
+  <li><a href="index.html">Module code</a><ul>
+  </ul></li>
+  </ul></li>
+</ul>
+</div>
+<div id="searchbox" style="display: none" role="search">
+  <h3 id="searchlabel">Quick search</h3>
+    <div class="searchformwrapper">
+    <form class="search" action="../search.html" method="get">
+      <input type="text" name="q" aria-labelledby="searchlabel" autocomplete="off" autocorrect="off" autocapitalize="off" spellcheck="false"/>
+      <input type="submit" value="Go" />
+    </form>
+    </div>
+</div>
+<script>document.getElementById('searchbox').style.display = "block"</script>
+
+
+
+
+
+
+
+
+        </div>
+      </div>
+      <div class="clearer"></div>
+    </div>
+    <div class="footer">
+      &copy;2022, Eitan Katz.
+      
+      |
+      Powered by <a href="http://sphinx-doc.org/">Sphinx 5.3.0</a>
+      &amp; <a href="https://github.com/bitprophet/alabaster">Alabaster 0.7.12</a>
+      
+    </div>
+
+    
+
+    
+  </body>
+</html>

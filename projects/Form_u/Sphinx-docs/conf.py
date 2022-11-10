@@ -1,3 +1,4 @@
+
 import os
 import sys
 
@@ -37,7 +38,6 @@ html_static_path = ['_static']
 # https://www.sphinx-doc.org/en/master/usage/extensions/todo.html#configuration
 
 todo_include_todos = True
-
 
 sys.path.insert(0, os.path.abspath('../'))
 
