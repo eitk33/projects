@@ -2,30 +2,109 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="606ccd4e-3411-48b6-ba56-9f5be972aed1" name="Changes" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/Form_u.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/Form_u.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Sphinx-docs/Makefile" beforeDir="false" afterPath="$PROJECT_DIR$/Sphinx-docs/Makefile" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Sphinx-docs/_build/doctrees/environment.pickle" beforeDir="false" afterPath="$PROJECT_DIR$/Sphinx-docs/_build/doctrees/environment.pickle" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Sphinx-docs/_build/doctrees/formula.doctree" beforeDir="false" afterPath="$PROJECT_DIR$/Sphinx-docs/_build/doctrees/formula.doctree" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Sphinx-docs/_build/doctrees/index.doctree" beforeDir="false" afterPath="$PROJECT_DIR$/Sphinx-docs/_build/doctrees/index.doctree" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Sphinx-docs/_build/doctrees/ing.doctree" beforeDir="false" afterPath="$PROJECT_DIR$/Sphinx-docs/_build/doctrees/ing.doctree" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Sphinx-docs/_build/doctrees/phase.doctree" beforeDir="false" afterPath="$PROJECT_DIR$/Sphinx-docs/_build/doctrees/phase.doctree" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Sphinx-docs/_build/doctrees/project.doctree" beforeDir="false" afterPath="$PROJECT_DIR$/Sphinx-docs/_build/doctrees/project.doctree" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Sphinx-docs/_build/doctrees/test_project.doctree" beforeDir="false" afterPath="$PROJECT_DIR$/Sphinx-docs/_build/doctrees/test_project.doctree" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Sphinx-docs/_build/doctrees/upload.doctree" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Sphinx-docs/_build/markdown/formula.md" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Sphinx-docs/_build/markdown/index.md" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Sphinx-docs/_build/markdown/ing.md" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Sphinx-docs/_build/markdown/phase.md" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Sphinx-docs/_build/markdown/project.md" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Sphinx-docs/_build/markdown/test_project.md" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Sphinx-docs/_build/markdown/upload.md" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Sphinx-docs/conf.py" beforeDir="false" afterPath="$PROJECT_DIR$/Sphinx-docs/conf.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Sphinx-docs/index.rst" beforeDir="false" afterPath="$PROJECT_DIR$/Sphinx-docs/index.rst" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Sphinx-docs/mkdsupport.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Sphinx-docs/upload.rst" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/project.py" beforeDir="false" afterPath="$PROJECT_DIR$/project.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Sphinx-docs/.buildinfo" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Sphinx-docs/.doctrees/Sphinx-docs/formula.doctree" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Sphinx-docs/.doctrees/Sphinx-docs/index.doctree" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Sphinx-docs/.doctrees/Sphinx-docs/ing.doctree" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Sphinx-docs/.doctrees/Sphinx-docs/phase.doctree" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Sphinx-docs/.doctrees/Sphinx-docs/project.doctree" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Sphinx-docs/.doctrees/Sphinx-docs/test_project.doctree" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Sphinx-docs/.doctrees/environment.pickle" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Sphinx-docs/.doctrees/formula.doctree" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Sphinx-docs/.doctrees/index.doctree" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Sphinx-docs/.doctrees/ing.doctree" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Sphinx-docs/.doctrees/phase.doctree" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Sphinx-docs/.doctrees/project.doctree" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Sphinx-docs/.doctrees/test_project.doctree" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Sphinx-docs/.doctrees/venv/Lib/site-packages/Flask-2.2.2.dist-info/LICENSE.doctree" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Sphinx-docs/.doctrees/venv/Lib/site-packages/Jinja2-3.1.2.dist-info/LICENSE.doctree" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Sphinx-docs/.doctrees/venv/Lib/site-packages/MarkupSafe-2.1.1.dist-info/LICENSE.doctree" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Sphinx-docs/.doctrees/venv/Lib/site-packages/Werkzeug-2.2.2.dist-info/LICENSE.doctree" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Sphinx-docs/.doctrees/venv/Lib/site-packages/click-8.1.3.dist-info/LICENSE.doctree" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Sphinx-docs/.doctrees/venv/Lib/site-packages/itsdangerous-2.1.2.dist-info/LICENSE.doctree" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Sphinx-docs/Makefile" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Sphinx-docs/Sphinx-docs/formula.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Sphinx-docs/Sphinx-docs/index.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Sphinx-docs/Sphinx-docs/ing.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Sphinx-docs/Sphinx-docs/phase.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Sphinx-docs/Sphinx-docs/project.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Sphinx-docs/Sphinx-docs/test_project.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Sphinx-docs/_build/doctrees/environment.pickle" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Sphinx-docs/_build/doctrees/formula.doctree" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Sphinx-docs/_build/doctrees/index.doctree" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Sphinx-docs/_build/doctrees/ing.doctree" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Sphinx-docs/_build/doctrees/phase.doctree" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Sphinx-docs/_build/doctrees/project.doctree" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Sphinx-docs/_build/doctrees/test_project.doctree" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Sphinx-docs/_modules/formula.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Sphinx-docs/_modules/index.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Sphinx-docs/_modules/ing.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Sphinx-docs/_modules/phase.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Sphinx-docs/_modules/project.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Sphinx-docs/_sources/Sphinx-docs/formula.rst.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Sphinx-docs/_sources/Sphinx-docs/index.rst.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Sphinx-docs/_sources/Sphinx-docs/ing.rst.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Sphinx-docs/_sources/Sphinx-docs/phase.rst.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Sphinx-docs/_sources/Sphinx-docs/project.rst.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Sphinx-docs/_sources/Sphinx-docs/test_project.rst.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Sphinx-docs/_sources/formula.rst.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Sphinx-docs/_sources/index.rst.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Sphinx-docs/_sources/ing.rst.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Sphinx-docs/_sources/phase.rst.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Sphinx-docs/_sources/project.rst.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Sphinx-docs/_sources/test_project.rst.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Sphinx-docs/_sources/venv/Lib/site-packages/Flask-2.2.2.dist-info/LICENSE.rst.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Sphinx-docs/_sources/venv/Lib/site-packages/Jinja2-3.1.2.dist-info/LICENSE.rst.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Sphinx-docs/_sources/venv/Lib/site-packages/MarkupSafe-2.1.1.dist-info/LICENSE.rst.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Sphinx-docs/_sources/venv/Lib/site-packages/Werkzeug-2.2.2.dist-info/LICENSE.rst.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Sphinx-docs/_sources/venv/Lib/site-packages/click-8.1.3.dist-info/LICENSE.rst.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Sphinx-docs/_sources/venv/Lib/site-packages/itsdangerous-2.1.2.dist-info/LICENSE.rst.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Sphinx-docs/_static/_sphinx_javascript_frameworks_compat.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Sphinx-docs/_static/alabaster.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Sphinx-docs/_static/basic.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Sphinx-docs/_static/custom.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Sphinx-docs/_static/doctools.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Sphinx-docs/_static/documentation_options.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Sphinx-docs/_static/file.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Sphinx-docs/_static/jquery-3.6.0.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Sphinx-docs/_static/jquery.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Sphinx-docs/_static/language_data.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Sphinx-docs/_static/minus.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Sphinx-docs/_static/plus.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Sphinx-docs/_static/pygments.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Sphinx-docs/_static/searchtools.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Sphinx-docs/_static/sphinx_highlight.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Sphinx-docs/_static/underscore-1.13.1.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Sphinx-docs/_static/underscore.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Sphinx-docs/conf.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Sphinx-docs/formula.rst" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Sphinx-docs/genindex.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Sphinx-docs/index.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Sphinx-docs/index.rst" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Sphinx-docs/ing.rst" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Sphinx-docs/make.bat" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Sphinx-docs/objects.inv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Sphinx-docs/phase.rst" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Sphinx-docs/project.rst" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Sphinx-docs/py-modindex.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Sphinx-docs/readdocs/formula.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Sphinx-docs/readdocs/index.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Sphinx-docs/readdocs/ing.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Sphinx-docs/readdocs/phase.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Sphinx-docs/readdocs/project.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Sphinx-docs/readdocs/test_project.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Sphinx-docs/search.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Sphinx-docs/searchindex.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Sphinx-docs/test_project.rst" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Sphinx-docs/venv/Lib/site-packages/Flask-2.2.2.dist-info/LICENSE.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Sphinx-docs/venv/Lib/site-packages/Jinja2-3.1.2.dist-info/LICENSE.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Sphinx-docs/venv/Lib/site-packages/MarkupSafe-2.1.1.dist-info/LICENSE.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Sphinx-docs/venv/Lib/site-packages/Werkzeug-2.2.2.dist-info/LICENSE.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Sphinx-docs/venv/Lib/site-packages/click-8.1.3.dist-info/LICENSE.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Sphinx-docs/venv/Lib/site-packages/itsdangerous-2.1.2.dist-info/LICENSE.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/conf.py" beforeDir="false" afterPath="$PROJECT_DIR$/conf.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/index.rst" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />

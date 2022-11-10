@@ -21,6 +21,7 @@ extensions = [
     'sphinx.ext.autodoc',
     'sphinx.ext.viewcode',
     'sphinx.ext.todo',
+    'myst_parser',
 ]
 
 templates_path = ['_templates']
@@ -33,13 +34,13 @@ language = 'en'
 
 html_theme = 'alabaster'
 html_static_path = ['_static']
-
+numpydoc_show_class_members = False
 # -- Options for todo extension ----------------------------------------------
 # https://www.sphinx-doc.org/en/master/usage/extensions/todo.html#configuration
 
 todo_include_todos = True
 
-sys.path.insert(0, os.path.abspath('\.'))
+sys.path.insert(0, os.path.abspath('./'))
 
 
 def skip(app, what, name, obj, would_skip, options):
