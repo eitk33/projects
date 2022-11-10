@@ -75,4 +75,4 @@
 
     updated list of ingredients for the current phase
 
-[Index](../index.md)
+[Index](../README.md)

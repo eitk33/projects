@@ -32,4 +32,4 @@ Bases: `object`
 
     :return: dict
 
-[Index](../index.md)
+[Index](../README.md)
