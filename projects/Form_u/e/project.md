@@ -42,21 +42,21 @@
 
 
 ### project.new_phase(x)
-creating the additional  requirements for the new created phase
+    creating the additional  requirements for the new created phase
 
-:param x: is Phase class
+    :param x: is Phase class
 
-:return: completed new phase object with its additional requirements
+    :return: completed new phase object with its additional requirements
 
 
 ### project.update(x, y)
-insert created ingredient to database
+    insert created ingredient to database
 
-:param x: new ingredient (Ing object)
+    :param x: new ingredient (Ing object)
 
-:param y: list of characteristics to update in the database
+    :param y: list of characteristics to update in the database
 
-:return: None
+    :return: None
 
 
 ### project.upload(x, r)

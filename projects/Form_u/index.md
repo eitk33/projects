@@ -3,9 +3,16 @@ sphinx-quickstart on Thu Nov 10 15:36:15 2022.
 You can adapt this file completely to your liking, but it should at least
 contain the root `toctree` directive. -->
 # Welcome to Form_u’s documentation!
-
+The aim of this project is to help formulators (and to some extent, others in chemistry-related industries manufacturers) create formulas, in a manner that will allow reconstructing them afterwards. 
 # Contents:
 
+* [project module (this is the main script)](e/project.md)
+
+
+    * [`formup()`](./e/project.md#project.formup)
+
+
+    * [`ing()`](./e/project.md#project.ing)
 
 * [formula module](e/formula.md)
 
@@ -23,18 +30,6 @@ contain the root `toctree` directive. -->
 
 
     * [`Phase`](./e/phase.md#phase.Phase)
-
-
-* [project module](e/project.md)
-
-
-    * [`formup()`](./e/project.md#project.formup)
-
-
-    * [`ing()`](./e/project.md#project.ing)
-
-
-
 
 
     * [`new()`](./e/project.md#project.new)
