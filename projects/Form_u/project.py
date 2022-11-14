@@ -191,7 +191,7 @@ def upload(x, r):
     :return: updated list of ingredients for the current phase
 
     """
-  #  sdb = db.execute("SELECT * FROM ingridients")
+    #sdb = db.execute("SELECT * FROM ingridients")
     for item in sdb:
         ing = Ing()
         for k, v in item.items():

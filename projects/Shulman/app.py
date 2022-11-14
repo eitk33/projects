@@ -14,7 +14,7 @@ from helpers import apology, login_required, mailpara
 
 from flask_mail import Mail, Message
 
-
+zzz
 app = Flask(__name__)
 mailpara()
 app.config["MAIL_DEFAULT_SENDER"] = os.environ["MAIL_DEFAULT_SENDER"]
