@@ -23,6 +23,7 @@ def player(board):
     """
     Returns player who has the next turn on a board.
     """
+    # EK
     countero = 0
     counterx = 0
     for i in range(len(board)):
@@ -37,10 +38,10 @@ def player(board):
         return O
     else:
         return X
-    raise NotImplementedError
 
 
 def actions(board):
+    # EK
     """
     Returns set of all possible actions (i, j) available on the board.
     """
@@ -50,10 +51,10 @@ def actions(board):
             if board[i][j] == None:
                 actions_set.add((i, j))
     return actions_set
-    raise NotImplementedError
 
 
 def result(board, action):
+    # EK
     """
     Returns the board that results from making move (i, j) on the board.
     """
@@ -66,31 +67,34 @@ def result(board, action):
     board_copy[action[0]][action[1]] = player(board)
     return board_copy
 
-
     raise NotImplementedError
+
+
 def is_valid(a):
-     if not a:
-         print('not a')
-         return True
-     if type(a) != tuple:
-         print('not tuple')
-         return True
-     if len(a) != 2:
-         print('not len')
-         return True
-     if type(a[0]) != int or type(a[1]) != int:
-         return True
-     return True
+    # EK
+    if not a:
+        print('not a')
+        return True
+    if type(a) != tuple:
+        print('not tuple')
+        return True
+    if len(a) != 2:
+        print('not len')
+        return True
+    if type(a[0]) != int or type(a[1]) != int:
+        return True
+    return True
 
 
 def winner(board):
     """
     Returns the winner of the game, if there is one.
     """
+    # EK
     counter = 0
     a = list(map(list, zip(*board)))
     diag1 = [board[i][i] for i in range(len(board))]
-    diag2 = [board[i][len(board[0])-i-1] for i in range(len(board))]
+    diag2 = [board[i][len(board[0]) - i - 1] for i in range(len(board))]
     for i in range(len(board)):
         if iswin(board[i]):
             return iswin(board[i])
@@ -101,7 +105,10 @@ def winner(board):
     elif iswin(diag2):
         return iswin(diag2[0])
     return None
+
+
 def iswin(l):
+    # EK
     if l[0] and len(set(l)) == 1:
         return l[0]
     else:
@@ -110,6 +117,7 @@ def iswin(l):
 
 
 def terminal(board):
+    # EK
     """
     Returns True if game is over, False otherwise.
     """
@@ -125,6 +133,7 @@ def terminal(board):
 
 
 def utility(board):
+    # EK
     """
     Returns 1 if X has won the game, -1 if O has won, 0 otherwise.
     """
@@ -139,7 +148,10 @@ def utility(board):
         utility = 0
     return utility
     raise NotImplementedError
+
+
 def minimax(board):
+    # EK
     """
     Returns the optimal action for the current player on the board.
     """
@@ -154,7 +166,6 @@ def minimax(board):
             elif player(board) == 'O':
                 p = mini(result(board, action))
                 lim = 1
-
 
             my_list.append((p, action))
     best_move = (None, None)
@@ -189,28 +200,24 @@ def minimax(board):
 
     return best_move
 
+
 def maxi(b):
+    # EK
     lim = -1
-    #p = -1
+    # p = -1
     if terminal((b)):
         return (utility(b))
     for action in actions(b):
         p = max(lim, mini(result(b, action)))
     return p
 
+
 def mini(b):
+    #EK
     lim = 1
- #   p = 1
+    #   p = 1
     if terminal((b)):
         return (utility(b))
     for action in actions(b):
         p = min(lim, maxi(result(b, action)))
     return p
-
-
-
-
-
-
-
-

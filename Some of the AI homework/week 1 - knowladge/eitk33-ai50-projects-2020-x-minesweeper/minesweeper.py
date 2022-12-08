@@ -59,6 +59,7 @@ class Minesweeper():
         within one row and column of a given cell,
         not including the cell itself.
         """
+        # EK
 
         # Keep count of nearby mines
         count = 0
@@ -79,6 +80,7 @@ class Minesweeper():
         return count
 
     def won(self):
+        # EK
         """
         Checks if all mines have been flagged.
         """
@@ -86,6 +88,7 @@ class Minesweeper():
 
 
 class Sentence():
+
     """
     Logical statement about a Minesweeper game
     A sentence consists of a set of board cells,
@@ -103,6 +106,7 @@ class Sentence():
         return f"{self.cells} = {self.count}"
 
     def known_mines(self):
+        # EK
         """
         Returns the set of all cells in self.cells known to be mines.
         """
@@ -111,6 +115,7 @@ class Sentence():
         return None
 
     def known_safes(self):
+        # EK
         """
         Returns the set of all cells in self.cells known to be safe.
         """
@@ -119,6 +124,7 @@ class Sentence():
         return None
 
     def mark_mine(self, cell):
+        # EK
         """
         Updates internal knowledge representation given the fact that
         a cell is known to be a mine.
@@ -130,6 +136,7 @@ class Sentence():
             return
 
     def mark_safe(self, cell):
+        # EK
         """
         Updates internal knowledge representation given the fact that
         a cell is known to be safe.
@@ -161,6 +168,7 @@ class MinesweeperAI():
         self.knowledge = []
 
     def mark_mine(self, cell):
+        # EK
         """
         Marks a cell as a mine, and updates all knowledge
         to mark that cell as a mine as well.
@@ -174,11 +182,13 @@ class MinesweeperAI():
         Marks a cell as safe, and updates all knowledge
         to mark that cell as safe as well.
         """
+        # EK
         self.safes.add(cell)
         for sentence in self.knowledge:
             sentence.mark_safe(cell)
 
     def add_knowledge(self, cell, count):
+        # EK
         """
         Called when the Minesweeper board tells us, for a given
         safe cell, how many neighboring cells have mines in them.
@@ -220,6 +230,7 @@ class MinesweeperAI():
         return
 
     def mines_n_safes(self):
+        # EK
         while True:
             checker = 0
             for sentence in self.knowledge:
@@ -249,7 +260,8 @@ class MinesweeperAI():
             else:
                 break
 
-    def itere(self):
+    def iter(self):
+        # EK
         while True:
             check = 0
             self.knowledge = [x for x in self.knowledge if x.cells]
@@ -270,6 +282,7 @@ class MinesweeperAI():
                 return
 
     def subsets(self, a, b):
+        # EK
         if a.cells.issubset(b.cells):
             #print('subs if\n', a, 'a\n', b, 'b\n')
             diff = b.cells.difference(a.cells)
@@ -287,6 +300,7 @@ class MinesweeperAI():
         return new_sen
 
     def make_safe_move(self):
+        # EK
         """
         Returns a safe cell to choose on the Minesweeper board.
         The move must be known to be safe, and not already a move
@@ -304,6 +318,7 @@ class MinesweeperAI():
         return None
 
     def make_random_move(self):
+        # EK
         """
         Returns a move to make on the Minesweeper board.
         Should choose randomly among cells that:

@@ -48,6 +48,7 @@ def main():
 
 
 def load_files(directory):
+    # EK
     """
     Given a directory name, return a dictionary mapping the filename of each
     `.txt` file inside that directory to the file's contents as a string.
@@ -67,6 +68,7 @@ def load_files(directory):
 
 
 def tokenize(document):
+    # EK
     """
     Given a document (represented as a string), return a list of all of the
     words in that document, in order.
@@ -85,6 +87,7 @@ def tokenize(document):
 
 
 def compute_idfs(documents):
+    # EK
     """
     Given a dictionary of `documents` that maps names of documents to a list
     of words, return a dictionary that maps words to their IDF values.
@@ -109,6 +112,7 @@ def compute_idfs(documents):
 
 
 def top_files(query, files, idfs, n):
+    # EK
     """
     Given a `query` (a set of words), `files` (a dictionary mapping names of
     files to a list of their words), and `idfs` (a dictionary mapping words
@@ -135,6 +139,7 @@ def top_files(query, files, idfs, n):
 
 
 def top_sentences(query, sentences, idfs, n):
+    # EK
     """
     Given a `query` (a set of words), `sentences` (a dictionary mapping
     sentences to a list of their words), and `idfs` (a dictionary mapping words

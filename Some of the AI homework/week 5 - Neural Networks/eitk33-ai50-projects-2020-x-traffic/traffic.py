@@ -45,6 +45,7 @@ def main():
 
 
 def load_data(data_dir):
+    # EK
     """
     Load image data from directory `data_dir`.
 
@@ -75,6 +76,7 @@ def load_data(data_dir):
     return tor
 
 def get_model():
+    # EK
     """
     Returns a compiled convolutional neural network model. Assume that the
     `input_shape` of the first layer is `(IMG_WIDTH, IMG_HEIGHT, 3)`.

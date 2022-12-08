@@ -60,6 +60,7 @@ def load_data(filename):
     labels should be the corresponding list of labels, where each label
     is 1 if Revenue is true, and 0 otherwise.
     """
+    # EK
     evidance = []
     labels = []
     with open (filename, 'r') as f:
@@ -106,6 +107,7 @@ def load_data(filename):
 
 
 def train_model(evidence, labels):
+    # EK
     """
     Given a list of evidence lists and a list of labels, return a
     fitted k-nearest neighbor model (k=1) trained on the data.
@@ -132,6 +134,7 @@ def evaluate(labels, predictions):
     representing the "true negative rate": the proportion of
     actual negative labels that were accurately identified.
     """
+    # EK
     correct = 0
     incorrect = 0
     total_pos = 0

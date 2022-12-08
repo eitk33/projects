@@ -1,23 +1,46 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="9fb29426-659b-43e1-b594-ac90b177f19e" name="Changes" comment="" />
+    <list default="true" id="9fb29426-659b-43e1-b594-ac90b177f19e" name="Changes" comment="">
+      <change beforePath="$PROJECT_DIR$/../../week 0 - search/eitk33-ai50-projects-2020-x-tictactoe/README.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../week 0 - search/eitk33-ai50-projects-2020-x-tictactoe/degrees.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../week 0 - search/eitk33-ai50-projects-2020-x-tictactoe/demo.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../week 0 - search/eitk33-ai50-projects-2020-x-tictactoe/project.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../week 0 - search/eitk33-ai50-projects-2020-x-tictactoe/test_project.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../week 0 - search/eitk33-ai50-projects-2020-x-tictactoe/tictactoe.py" beforeDir="false" afterPath="$PROJECT_DIR$/../../week 0 - search/eitk33-ai50-projects-2020-x-tictactoe/tictactoe.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../week 1 - knowladge/eitk33-ai50-projects-2020-x-minesweeper/.idea/vcs.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../../week 1 - knowladge/eitk33-ai50-projects-2020-x-minesweeper/.idea/vcs.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../week 1 - knowladge/eitk33-ai50-projects-2020-x-minesweeper/minesweeper.py" beforeDir="false" afterPath="$PROJECT_DIR$/../../week 1 - knowladge/eitk33-ai50-projects-2020-x-minesweeper/minesweeper.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../week 2 - uncertinty/eitk33-ai50-projects-2020-x-pagerank/.idea/vcs.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../../week 2 - uncertinty/eitk33-ai50-projects-2020-x-pagerank/.idea/vcs.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../week 2 - uncertinty/eitk33-ai50-projects-2020-x-pagerank/pagerank.py" beforeDir="false" afterPath="$PROJECT_DIR$/../../week 2 - uncertinty/eitk33-ai50-projects-2020-x-pagerank/pagerank.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../week 4 - Learning/eitk33-ai50-projects-2020-x-shopping/.idea/vcs.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../../week 4 - Learning/eitk33-ai50-projects-2020-x-shopping/.idea/vcs.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../week 4 - Learning/eitk33-ai50-projects-2020-x-shopping/shopping.py" beforeDir="false" afterPath="$PROJECT_DIR$/../../week 4 - Learning/eitk33-ai50-projects-2020-x-shopping/shopping.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../week 5 - Neural Networks/eitk33-ai50-projects-2020-x-traffic/.idea/vcs.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../../week 5 - Neural Networks/eitk33-ai50-projects-2020-x-traffic/.idea/vcs.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../week 5 - Neural Networks/eitk33-ai50-projects-2020-x-traffic/traffic.py" beforeDir="false" afterPath="$PROJECT_DIR$/../../week 5 - Neural Networks/eitk33-ai50-projects-2020-x-traffic/traffic.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/parser.py" beforeDir="false" afterPath="$PROJECT_DIR$/parser.py" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
   <component name="Git.Settings">
-    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/../../.." />
   </component>
   <component name="MarkdownSettingsMigration">
     <option name="stateVersion" value="1" />
   </component>
   <component name="ProjectId" id="2GcKIXURf2hp5QOEAR6ixHob70g" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "RunOnceActivity.OpenProjectViewOnStart": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true"
+  }
+}]]></component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
@@ -28,5 +51,16 @@
       <updated>1666682354445</updated>
     </task>
     <servers />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
   </component>
 </project>

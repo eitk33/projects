@@ -60,6 +60,7 @@ def transition_model(corpus, page, damping_factor):
     linked to by `page`. With probability `1 - damping_factor`, choose
     a link at random chosen from all pages in the corpus.
     """
+    # EK
     dict_to_return = {}
     page_links = corpus[page[0]]
     oa_links = []
@@ -82,6 +83,7 @@ def transition_model(corpus, page, damping_factor):
 
 
 def sample_pagerank(corpus, damping_factor, n):
+    # EK
     """
     Return PageRank values for each page by sampling `n` pages
     according to transition model, starting with a page at random.
@@ -113,6 +115,7 @@ def sample_pagerank(corpus, damping_factor, n):
 
 
 def iterate_pagerank(corpus, damping_factor):
+    # EK
     """
     Return PageRank values for each page by iteratively updating
     PageRank values until convergence.
